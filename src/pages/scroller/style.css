@@ -1,0 +1,41 @@
+.page{
+    /*margin: 200px 100px;*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.touch-container{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.scroller-container{
+    position: absolute;
+    bottom: 0px;
+    height: 230px;
+    width: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.scroller-item{
+    display: inline-block;
+    width: 80px;
+    height: 10000px;
+    background: linear-gradient(#58a 50%, goldenrod 0);
+    background-size: 5px;
+    transition: transform .3ms linear;
+}
+
+.scroller-touch-point{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    border: 50%;
+    background: #000;
+}
