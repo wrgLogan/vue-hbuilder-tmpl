@@ -9,11 +9,11 @@ export default new Router({
     routes: [
         {
             path: '/',
-            component: IndexPage
+            component: resolve => require(['./pages/index/index.vue'],resolve) 
         },
         {
             path: '/scroller',
-            component: ScrollerPage
+            component: resolve => require(['./pages/index/index.vue'],resolve) 
         }
     ]
 })

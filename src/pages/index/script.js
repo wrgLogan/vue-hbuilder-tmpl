@@ -1,9 +1,6 @@
 import ReqAnimate from '../../assets/js/reqAnimate.js';
 import tween from '../../assets/js/tween.js';
 import async from '../../assets/js/async.js';
-import $ from 'jquery';
-
-window.async = async;
 
 export default {
     data: function () {
@@ -12,7 +9,7 @@ export default {
         };
     },
     mounted: function () {
-
+        
         window.animate = new ReqAnimate;
         var bird = new Bird('.bird');
         var pipe = new Pipe('#pipe1');

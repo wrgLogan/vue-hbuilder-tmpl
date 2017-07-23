@@ -40,6 +40,7 @@ module.exports = {
     performance: {
         hints: false
     },
+    devtool: 'eval-source-map',
     plugins: [
         new FriendlyErrorsPlugin(),
         new htmlWebpackPlugin({
@@ -49,7 +50,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
-        })
+        }),
+        new webpack.SourceMapDevToolPlugin()
     ]
 };
 

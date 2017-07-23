@@ -3,10 +3,8 @@ import App from './App.vue'
 import router from './router.js'
 import Async from './assets/js/async.js'
 import $ from 'jquery';
-window.$ = $;
-require('./assets/css/stage.css');
 
-window.Async = Async;
+require('./assets/css/stage.css');
 
 new Vue({
   router: router,
