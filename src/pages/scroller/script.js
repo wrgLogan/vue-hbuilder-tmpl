@@ -11,6 +11,11 @@ export default {
             msg: 'Scroller'
         }
     },
+    methods: {
+        back: function() {
+            this.$goBackward();
+        }
+    },
     mounted: function() {
         var animate = new ReqAnimate;
         var stopAnimate;
@@ -113,9 +118,6 @@ export default {
                 
             })
         }
-    },
-    methods: {
-       
     }
 };
 

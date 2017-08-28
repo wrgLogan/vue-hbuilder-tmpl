@@ -13,7 +13,7 @@ export default new Router({
         },
         {
             path: '/scroller',
-            component: resolve => require(['./pages/index/index.vue'],resolve) 
+            component: resolve => require(['./pages/scroller/index.vue'],resolve) 
         }
     ]
 })
