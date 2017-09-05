@@ -10,6 +10,8 @@ export default {
     mounted: function () {
 
     },
+    components: {
+    },
     methods: {
         go() {
             this.$switchTo('scroller', 'forward');

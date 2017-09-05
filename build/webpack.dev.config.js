@@ -2,8 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var htmlWebpackPlugin = require('html-webpack-plugin');
+var vuxLoader = require('vux-loader');
 
-module.exports = {
+var webpackConfig = {
     entry: {
         app: path.join(__dirname, '../src/index.js')
     },
@@ -29,6 +30,20 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: '/node_modules/'
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]'
+                }
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
             }
         ]
     },
@@ -55,3 +70,4 @@ module.exports = {
     ]
 };
 
+module.exports = webpackConfig;
