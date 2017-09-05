@@ -6,9 +6,6 @@ import $ from 'jquery';
 import pageSwitcher from './plugins/page-switcher.js'
 import './assets/css/transition.css'
 
-import VueCarbon from 'vue-carbon'
-import 'vue-carbon/dist/vue-carbon.css'
-
 Vue.use(VueCarbon);
 
 var vm = new Vue({
